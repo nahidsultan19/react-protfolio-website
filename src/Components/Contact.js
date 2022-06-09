@@ -21,7 +21,7 @@ const Contact = () => {
     return (
         <div className='min-h-screen bg-base-300' id='contact'>
             <div className="lg:flex items-center lg:px-20">
-                <div className='card w-full lg:max-w-lg lg:mt-5 shadow-2xl bg-base-100'>
+                <div className='card w-full lg:max-w-lg lg:mt-5 shadow-2xl bg-base-100' data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
                     <h2 className='text-orange-500 text-center text-3xl font-bold py-8'>Contact Me</h2>
                     <div className='card-body'>
                         <form ref={form} onSubmit={sendEmail} className='form-control max-w-lg'>
