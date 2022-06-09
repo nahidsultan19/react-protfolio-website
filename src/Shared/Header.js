@@ -6,7 +6,7 @@ const Header = () => {
         <li><Link to='/home'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/portfolio'>Projects</Link></li>
-        <li><a href='home#contact'>Contact Me</a></li>
+        <li><a href='/home#contact'>Contact Me</a></li>
     </>
     return (
         <div class="navbar bg-gray-800 text-white fixed top-0 z-10">
