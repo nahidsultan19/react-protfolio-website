@@ -25,9 +25,9 @@ const Header = () => {
                 <ul class="menu menu-horizontal p-0">
                     {menu}
                 </ul>
-                <div class="">
-                    <a class="btn" href='https://drive.google.com/file/d/1ycG_yfYC8X_L0hDqmq5_XGRn9CMS9Lhj/view?usp=sharing' target="_blank">Resume</a>
-                </div>
+
+                <a class="btn" href='https://drive.google.com/file/d/1ycG_yfYC8X_L0hDqmq5_XGRn9CMS9Lhj/view?usp=sharing' target="_blank">Resume</a>
+
             </div>
 
         </div>
