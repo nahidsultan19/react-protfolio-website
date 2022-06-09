@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { HiLocationMarker, HiPhoneMissedCall } from 'react-icons/hi';
+import { MdEmail } from 'react-icons/md';
 
 const Contact = () => {
     const form = useRef();
@@ -17,13 +19,10 @@ const Contact = () => {
             });
     };
     return (
-        <div className='hero min-h-screen'>
-            <div className="hero-content flex-col lg:flex-row-reverse">
-                <div class="text-center lg:text-left lg:px-20">
-                    <h1 class="text-5xl font-bold">Address</h1>
-                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                </div>
-                <div className='card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100'>
+        <div className='min-h-screen bg-base-300' id='contact'>
+            <div className="lg:flex items-center lg:px-20">
+                <div className='card w-full lg:max-w-lg lg:mt-5 shadow-2xl bg-base-100'>
+                    <h2 className='text-orange-500 text-center text-3xl font-bold py-8'>Contact Me</h2>
                     <div className='card-body'>
                         <form ref={form} onSubmit={sendEmail} className='form-control max-w-lg'>
                             <div className='form-control'>
@@ -37,12 +36,26 @@ const Contact = () => {
                             </label>
                             <input type="email" name="user_email" placeholder='Your Name' className='input input-bordered w-full max-w-lg' />
                             <label class="label">
-                                <span class="label-text">Message</span>
+                                <span className="label-text">Message</span>
                             </label>
                             <textarea name="message" className='textarea textarea-bordered' placeholder='Your Message' />
-                            <button className='btn mt-2'>Send</button>
+                            <button className='btn mt-2'>Send Message</button>
                         </form>
                     </div>
+                </div>
+                <div class="lg:text-left lg:max-w-lg px-12">
+                    <h1 className="lg:text-5xl font-bold py-4 text-center">Contact Info</h1>
+                    <p className="py-4 mt-8 flex justify-start items-center">
+                        <HiLocationMarker className='text-2xl' />
+                        Rajshahi, Bangladesh
+                    </p>
+                    <p className='pb-4 flex justify-start items-center'>
+                        <HiPhoneMissedCall className='text-2xl' />
+                        Phone:+889019999
+                    </p>
+                    <p className='flex justify-start items-center'>
+                        <MdEmail className='text-2xl' />
+                        sultannahid38@gmail.com</p>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ import portfolio4 from '../assets/portfolio/parts-manufacturer.png';
 const Projects = () => {
     return (
         <div>
-            <h2 className='text-center text-3xl font-bold text-purple-500 my-4'>My Simple Portfolio Project</h2>
+            <h2 className='text-center text-3xl uppercase font-bold text-purple-500 my-4'>My Simple Portfolio Project</h2>
             <div className='grid grid-cols-1 md:grid-cols-4 gap-5 my-12 mx-12 pb-12'>
                 <div className="card max-w-lg bg-base-100 shadow-xl image-full max-h-60">
                     <figure><img src={portfolio1} alt="Shoes" /></figure>
