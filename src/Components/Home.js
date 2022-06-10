@@ -5,6 +5,7 @@ import Contact from './Contact';
 import Projects from './Projects';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Progress from './Progress';
 
 const Home = () => {
     useEffect(() => {
@@ -15,6 +16,7 @@ const Home = () => {
             <Banner />
             <About />
             <Projects />
+            <Progress />
             <Contact />
         </div>
     );
