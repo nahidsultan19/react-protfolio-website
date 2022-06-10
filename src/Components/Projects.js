@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import portfolio1 from '../assets/portfolio/Find-Phone.png';
-import portfolio2 from '../assets/portfolio/lucy-one-react.png';
-import portfolio3 from '../assets/portfolio/Service-provider.png';
-import portfolio4 from '../assets/portfolio/parts-manufacturer.png';
+// import portfolio1 from '../assets/portfolio/Find-Phone.png';
+// import portfolio2 from '../assets/portfolio/lucy-one-react.png';
+// import portfolio3 from '../assets/portfolio/Service-provider.png';
+// import portfolio4 from '../assets/portfolio/parts-manufacturer.png';
+
 import Project from './Project';
 
 const Projects = () => {
@@ -14,7 +15,7 @@ const Projects = () => {
             .then(data => setProjects(data))
     }, [])
     return (
-        <div>
+        <div id='project'>
             <h2 className='text-center text-3xl uppercase font-bold text-purple-500 my-4'>My Simple Portfolio Project</h2>
             {/* <div className='grid grid-cols-1 md:grid-cols-4 gap-5 my-12 mx-12 pb-12'>
                 <div className="card max-w-lg bg-base-100 shadow-xl image-full max-h-60" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
