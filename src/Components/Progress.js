@@ -4,7 +4,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 const Progress = () => {
     return (
         <div>
-            <div className='max-w-lg mx-auto py-12'>
+            <div className='max-w-lg mx-auto py-12 px-4'>
                 <h2 className='text-4xl font-bold'>Skills</h2>
                 <ProgressBar completed={90} className="py-5" customLabel="JavaScript" />
                 <ProgressBar completed={70} customLabel="React" />
