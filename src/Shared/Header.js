@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
     const menu = <>
-        <li><Link to='/home'>Home</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/portfolio'>Projects</Link></li>
-        <li><a href='/home#contact'>Contact Me</a></li>
+        <li><Link to='/home#top' smooth>Home</Link></li>
+        <li><Link to='/home#about' smooth>About</Link></li>
+        <li><Link to='/home#project' smooth>Projects</Link></li>
+        <li><Link to='/home#contact' smooth>Contact Me</Link></li>
     </>
     return (
-        <div class="navbar bg-gray-800 text-white fixed top-0 z-10">
+        <div class="navbar bg-indigo-300 text-white fixed top-0 z-10">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -19,7 +19,7 @@ const Header = () => {
                         {menu}
                     </ul>
                 </div>
-                <a href='/' class="btn btn-ghost normal-case text-xl">Nahid</a>
+                <Link to='/' class="btn btn-ghost normal-case text-xl">Nahid</Link>
             </div>
             <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
