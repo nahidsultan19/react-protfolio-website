@@ -26,16 +26,16 @@ const Contact = () => {
                     <div className='card-body'>
                         <form ref={form} onSubmit={sendEmail} className='form-control max-w-lg'>
                             <div className='form-control'>
-                                <label class="label">
-                                    <span class="label-text">Name</span>
+                                <label className="label">
+                                    <span className="label-text">Name</span>
                                 </label>
                                 <input type="text" name="user_name" placeholder='Your Name' className='input input-bordered w-full max-w-lg' required />
                             </div>
-                            <label class="label">
-                                <span class="label-text">Email</span>
+                            <label className="label">
+                                <span className="label-text">Email</span>
                             </label>
                             <input type="email" name="user_email" placeholder='Your Name' className='input input-bordered w-full max-w-lg' required />
-                            <label class="label">
+                            <label className="label">
                                 <span className="label-text">Message</span>
                             </label>
                             <textarea name="message" className='textarea textarea-bordered' placeholder='Your Message' required />
@@ -43,7 +43,7 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-                <div class="lg:text-left lg:max-w-lg px-12">
+                <div className="lg:text-left lg:max-w-lg px-12">
                     <h1 className="lg:text-5xl font-bold py-4 text-center">Contact Info</h1>
                     <p className="py-4 mt-8 flex justify-start items-center">
                         <HiLocationMarker className='text-2xl' />
@@ -51,7 +51,7 @@ const Contact = () => {
                     </p>
                     <p className='pb-4 flex justify-start items-center'>
                         <HiPhoneMissedCall className='text-2xl' />
-                        Phone:+889019999
+                        Phone:+88901737-869085
                     </p>
                     <p className='flex justify-start items-center'>
                         <MdEmail className='text-2xl' />

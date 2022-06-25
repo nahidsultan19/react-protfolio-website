@@ -12,7 +12,7 @@ const Progress = () => {
                 <ProgressBar completed={70} customLabel="Python" />
                 <ProgressBar completed={80} className="py-5" customLabel="Django" />
                 <ProgressBar completed={90} customLabel="HTML" />
-                <ProgressBar completed={70} className="py-5" customLabel="CSS" />
+                <ProgressBar completed={85} className="py-5" customLabel="CSS" />
                 <ProgressBar completed={80} customLabel="Bootstrap" />
                 <ProgressBar completed={70} className="py-5" customLabel="Tailwind CSS" />
             </div>
