@@ -51,7 +51,7 @@ const Contact = () => {
                     </p>
                     <p className='pb-4 flex justify-start items-center'>
                         <HiPhoneMissedCall className='text-2xl' />
-                        Phone:+88901737-869085
+                        Phone:+8801737-869085
                     </p>
                     <p className='flex justify-start items-center'>
                         <MdEmail className='text-2xl' />
