@@ -19,24 +19,24 @@ const Contact = () => {
             });
     };
     return (
-        <div className='min-h-screen bg-base-200' id='contact'>
+        <div className='min-h-screen' id='contact'>
             <div className="lg:flex items-center lg:px-20">
-                <div className='card w-full lg:max-w-lg lg:mt-5 shadow-2xl bg-base-100' data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
+                <div className='card w-full lg:max-w-lg lg:mt-5 shadow-2xl bg-black' data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000">
                     <h2 className='text-orange-500 text-center text-3xl font-bold py-8'>Contact Me</h2>
                     <div className='card-body'>
                         <form ref={form} onSubmit={sendEmail} className='form-control max-w-lg'>
                             <div className='form-control'>
                                 <label className="label">
-                                    <span className="label-text">Name</span>
+                                    <span className="label-text text-white font-bold">Name</span>
                                 </label>
                                 <input type="text" name="user_name" placeholder='Your Name' className='input input-bordered w-full max-w-lg' required />
                             </div>
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text text-white font-bold">Email</span>
                             </label>
                             <input type="email" name="user_email" placeholder='Your Name' className='input input-bordered w-full max-w-lg' required />
                             <label className="label">
-                                <span className="label-text">Message</span>
+                                <span className="label-text text-white font-bold">Message</span>
                             </label>
                             <textarea name="message" className='textarea textarea-bordered' placeholder='Your Message' required />
                             <button className='btn mt-2'>Send Message</button>
@@ -51,7 +51,7 @@ const Contact = () => {
                     </p>
                     <p className='pb-4 flex justify-start items-center'>
                         <HiPhoneMissedCall className='text-2xl' />
-                        Phone:+8801737-869085
+                        Phone:+8615681209270
                     </p>
                     <p className='flex justify-start items-center'>
                         <MdEmail className='text-2xl' />

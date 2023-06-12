@@ -1,10 +1,12 @@
 import React from 'react';
 import ProgressBar from "@ramonak/react-progress-bar";
+import code from '../assets/images/code.png';
 
 const Progress = () => {
     return (
-        <div>
-            <div className='max-w-lg mx-auto py-12 px-4'>
+
+        <div className='lg:flex lg:py-12 px-10'>
+            <div className='grow'>
                 <h2 className='text-4xl font-bold'>Skills</h2>
                 <ProgressBar completed={90} className="py-5" customLabel="JavaScript" />
                 <ProgressBar completed={70} customLabel="React" />
@@ -16,7 +18,11 @@ const Progress = () => {
                 <ProgressBar completed={80} customLabel="Bootstrap" />
                 <ProgressBar completed={70} className="py-5" customLabel="Tailwind CSS" />
             </div>
-        </div >
+            <div className='py-6 px-4'>
+                <img className='w-full h-auto' src={code} alt="" />
+            </div>
+        </div>
+
     );
 };
 
