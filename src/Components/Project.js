@@ -11,7 +11,7 @@ const Project = ({ project }) => {
         navigate(detail);
     }
     return (
-        <div className="card max-w-lg bg-black-800 shadow-xl image-full max-h-60" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
+        <div className="card w-3/4 mx-auto max-w-lg bg-black-800 shadow-xl image-full max-h-60" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
             <figure><img src={img} alt="portfolio4" /></figure>
             <div className="card-body">
                 <div className="card-actions justify-start">

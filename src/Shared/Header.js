@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { themeChange } from 'theme-change';
+import logo from '../assets/images/code.png';
 
 const Header = () => {
+    const [active, setActive] = useState('')
     const menu = <>
-        <li><Link to='/home' smooth>Home</Link></li>
+        <li><Link to='/' onClick={() => { setActive(); window.scrollTo(0, 0) }} smooth>Home</Link></li>
         <li><Link to='/#about' smooth>About</Link></li>
         <li><Link to='/#project' smooth>Projects</Link></li>
         <li><Link to='/#contact' smooth>Contact Me</Link></li>
@@ -20,7 +22,7 @@ const Header = () => {
     }, [])
 
     return (
-        <div className="navbar bg-slate-950 text-white  top-0 z-10 px-16">
+        <nav className="navbar bg-slate-950 text-white  top-0 z-10 px-16">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabindex="0" className="sm:hidden fex fex-1 justify-end items-center">
@@ -30,6 +32,7 @@ const Header = () => {
                         {menu}
                     </ul>
                 </div>
+                <img src={logo} alt="" className='w-9 h-9 object-contain' />
                 <Link to='/' className="btn btn-ghost normal-case text-xl">Nahid</Link>
             </div>
             <div className="navbar-end hidden lg:flex">
@@ -44,7 +47,7 @@ const Header = () => {
                 </label> */}
             </div>
 
-        </div>
+        </nav>
     );
 };
 
