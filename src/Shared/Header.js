@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { themeChange } from 'theme-change';
-import logo from '../assets/images/code.png';
+import logo from '../assets/images/logo-no-background.png';
 
 const Header = () => {
     const [active, setActive] = useState('')
@@ -17,26 +17,50 @@ const Header = () => {
         </li>
     </>
 
+    // const navLink = [
+    //     {
+    //         "id": "home",
+    //         "title": "Home",
+    //     },
+    //     {
+    //         "id": "about",
+    //         "title": "About",
+    //     },
+    //     {
+    //         "id": "project",
+    //         "title": "Project",
+    //     },
+    //     {
+    //         "id": "contact",
+    //         "title": "Contact",
+    //     },
+    //     {
+    //         "id": "blog",
+    //         "title": "Blog",
+    //     }
+    // ]
+
     useEffect(() => {
         themeChange(false)
     }, [])
 
     return (
-        <nav className="navbar bg-slate-950 text-white  top-0 z-10 px-16">
+        <nav className="navbar bg-slate-950 text-white  top-0 z-10 lg:px-16 px-4">
             <div className="navbar-start">
+                <img src={logo} alt="" className='w-9 h-9 object-contain' />
                 <div className="dropdown">
                     <label tabindex="0" className="sm:hidden fex fex-1 justify-end items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-800 rounded-box w-52">
+                    <ul tabindex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-800 rounded-box w-52 hover:text-white">
                         {menu}
                     </ul>
                 </div>
-                <img src={logo} alt="" className='w-9 h-9 object-contain' />
-                <Link to='/' className="btn btn-ghost normal-case text-xl">Nahid</Link>
+
+                <Link to='/' className="normal-case text-xl sm:block hidden"> | Nahid</Link>
             </div>
-            <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal p-0 gap-x-2">
+            <div className="navbar-end hidden sm:flex flex-row">
+                <ul className={`menu menu-horizontal p-0 gap-x-2`}>
                     {menu}
                 </ul>
                 {/* <label className="swap swap-rotate gap-x-2">
