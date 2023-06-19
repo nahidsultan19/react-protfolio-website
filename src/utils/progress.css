@@ -1,0 +1,17 @@
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.animate-progress {
+    animation-name: progress;
+    animation-duration: 2s;
+    /* Adjust as needed */
+    animation-timing-function: ease-in-out;
+    /* Adjust as needed */
+}

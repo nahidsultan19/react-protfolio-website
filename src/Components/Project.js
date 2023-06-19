@@ -22,7 +22,7 @@ const Project = ({ project }) => {
         //         {/* <p>{des.slice(0, 100)}</p> */}
         //     </div>
         // </div>
-        <div className="mx-auto max-w-sm rounded overflow-hidden shadow-lg">
+        <div className="mx-auto max-w-sm rounded overflow-hidden shadow-lg" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
             <div className="relative">
                 <img
                     className="w-full h-48 object-cover"
