@@ -9,7 +9,7 @@ const About = () => {
             </div>
             <div className='lg:py-12 ml-10 pb-5 max-w-md sm:pe-4' data-aos="fade-left" data-aos-offset="200" data-aos-duration="2000">
                 <h2 className='text-2xl font-bold'>About Me</h2>
-                <div className='bg-orange-500 w-1/4 h-0.5'></div>&nbsp;
+                <div className='bg-gradient-to-r from-orange-500 to-orange w-1/4 h-0.5'></div>&nbsp;
                 <p className='text-justify'>I am an enthusiastic Software Developer, with a few years of experience in Frontend Technology. I specialize in building user-friendly and performant web applications using modern frontend technologies. I'm proficient in React.js and its ecosystem.
                     I have some portfolio projects similar to this technology. Also, I have developed the MERN Stack project. Looking for a position where I can explore my knowledge.
                     My strength is in JavaScript, React, NodeJS/ExpressJS, HTML, CSS, Tailwind CSS, Bootstrap, Firebase, and MongoDB. I am also familiar with Redux.</p>

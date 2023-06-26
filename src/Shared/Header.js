@@ -57,7 +57,7 @@ const Header = () => {
                     </ul>
                 </div>
 
-                <Link to='/' className="normal-case text-xl sm:block hidden"> | Nahid</Link>
+                <Link to='/' className="normal-case text-xl sm:block hidden"> <span className='text-orange-500'>|</span> Nahid</Link>
             </div>
             <div className="navbar-end hidden sm:flex flex-row">
                 <ul className={`menu menu-horizontal p-0 gap-x-2`}>

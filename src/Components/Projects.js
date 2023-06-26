@@ -11,7 +11,7 @@ const Projects = () => {
     return (
         <div id='project'>
             <h2 className='text-center text-3xl font-bold bg-gradient-to-r from-white bg-clip-text text-transparent'>My Simple Portfolio Project</h2>
-            <div className='bg-gradient-to-r from-orange-500 to-orange w-96 h-1 mx-auto mb-4 shadow-xl'></div>&nbsp;
+            <div className='bg-gradient-to-r from-orange-500 to-orange w-96 h-0.5 mx-auto mb-4 shadow-xl'></div>&nbsp;
             <div className='md:flex flex-row px-10 pb-16 gap-8'>
                 {projects.map(project => <Project key={project.id} project={project}></Project>)}
             </div>
