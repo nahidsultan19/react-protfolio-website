@@ -21,7 +21,7 @@ const Banner = () => {
                     <Link smooth to='#about' className='btn glass mt-5'>About Me</Link>
                 </div>
                 <div className='py-14'>
-                    <img src={code} alt="" className='md:max-w-md mt-4' data-aos="fade-down" data-aos-offset="200" data-aos-duration="2000" />
+                    <img src={code} alt="" className='md:max-w-md mt-4 md:w-80' data-aos="fade-down" data-aos-offset="200" data-aos-duration="2000" />
                 </div>
             </div>
         </div>
