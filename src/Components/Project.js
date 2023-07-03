@@ -11,17 +11,6 @@ const Project = ({ project }) => {
         navigate(detail);
     }
     return (
-        // <div className="card w-auto mx-auto max-w-lg bg-black-800 image-full max-h-60" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
-        //     <figure><img className='w-auto h-5' src={img} alt="portfolio4" /></figure>
-        //     <div className="card-body">
-        //         <div className="card-actions justify-start">
-        //             <button className="btn btn-primary"><a href={url} target="_blank">Live Site</a></button>
-        //             <button className='btn' onClick={() => handleProjectDetail(id)}>Details</button>
-        //         </div>
-        //         <h2 className="card-title">{name}</h2>
-        //         {/* <p>{des.slice(0, 100)}</p> */}
-        //     </div>
-        // </div>
         <div className="mx-auto max-w-sm rounded overflow-hidden shadow-lg" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
             <div className="relative">
                 <img

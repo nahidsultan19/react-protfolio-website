@@ -3,17 +3,18 @@ import { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { themeChange } from 'theme-change';
 import logo from '../assets/images/logo-no-background.png';
+import { TbArrowRight } from 'react-icons/tb';
 
 const Header = () => {
     const [active, setActive] = useState('')
     const menu = <>
         <li><Link to='/' onClick={() => { setActive(); window.scrollTo(0, 0) }} smooth>Home</Link></li>
         <li><Link to='/#about' smooth>About</Link></li>
-        <li><Link to='/#project' smooth>Projects</Link></li>
-        <li><Link to='/#contact' smooth>Contact Me</Link></li>
+        <li><Link to='/#project' smooth>Portfolio</Link></li>
+        <li><Link to='/#contact' smooth>Contact</Link></li>
         <li><Link to='/blogs'>Blogs</Link></li>
         <li>
-            <a className="gap-x-2 btn bg-gradient-to-r bg-blue-900 hover:from-blue-800 hover:to-blue-500" href='https://drive.google.com/file/d/1ycG_yfYC8X_L0hDqmq5_XGRn9CMS9Lhj/view?usp=sharing' target="_blank">Resume</a>
+            <a className="gap-x-2 " href='https://drive.google.com/file/d/1ycG_yfYC8X_L0hDqmq5_XGRn9CMS9Lhj/view?usp=sharing' target="_blank">Hire Me<TbArrowRight className='mt-1' /></a>
         </li>
     </>
 
