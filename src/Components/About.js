@@ -3,7 +3,7 @@ import profile from '../assets/images/profile.png';
 
 const About = () => {
     return (
-        <div className='md:flex  justify-center items-center sm:px-10 text-white' id='about'>
+        <div className='flex flex-col md:flex-row flex-col-reverse  justify-center items-center sm:px-10 text-white' id='about'>
             <div className=''>
                 <img src={profile} alt="" className='mask mask-circle p-10 lg:max-w-sm md:w-96 sm:mx-auto bg-indigo-200' data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" />
             </div>
