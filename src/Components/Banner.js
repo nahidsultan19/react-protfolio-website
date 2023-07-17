@@ -13,7 +13,7 @@ const Banner = () => {
     return (
         <div>
             {/* <ParticleBackground /> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 grid-cols-re">
+            <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className=' text-white lg:py-28 my-5 lg:px-12 ml-7 md:order-1 order-2'>
                     <div className='banner'>
                         <h2 className='text-3xl' data-aos="slide-right" data-aos-offset="200" data-aos-duration="1000">Hi, I'm</h2>

@@ -16,7 +16,7 @@ const Progress = () => {
     return (
 
         <div className='lg:flex-col py-14'>
-            <div className='px-12 md:mb-18'>
+            <div className='md:px-12 px-7 md:mb-18'>
                 <h2 className="text-2xl font-bold mb-4">Technical Skills</h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
                     {skills.map((skill, index) => (
