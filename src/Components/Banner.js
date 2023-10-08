@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import code from '../assets/images/code.png';
+import photo from '../assets/images/photo.jpg';
 import { HashLink as Link } from 'react-router-hash-link';
 import ParticleBackground from './ParticleBackground';
 import { BsArrowDownShort } from 'react-icons/bs';
@@ -23,7 +23,7 @@ const Banner = () => {
                     <Link smooth to='#about' className='btn glass mt-5'>About Me <span className='text-2xl'><BsArrowDownShort /></span></Link>
                 </div>
                 <div className='py-14 order-1'>
-                    <img src={code} alt="" className='md:max-w-md mt-4 md:w-80  bg-orange-500 border-2  profile-img' data-aos="fade-down" data-aos-offset="200" data-aos-duration="2000" />
+                    <img src={photo} alt="" className='md:max-w-md mt-4 md:w-96  bg-orange-500 border-2  profile-img' data-aos="fade-down" data-aos-offset="200" data-aos-duration="2000" />
                 </div>
             </div>
         </div>
