@@ -8,7 +8,7 @@ import { TbArrowRight } from 'react-icons/tb';
 const Header = () => {
     const [active, setActive] = useState('')
     const menu = <>
-        <li><Link to='/' onClick={() => { setActive(); window.scrollTo(0, 0) }} smooth>Home</Link></li>
+        <li><Link to='/' onClick={() => { setActive(""); window.scrollTo(0, 0) }} smooth>Home</Link></li>
         <li><Link to='/#about' smooth>About</Link></li>
         <li><Link to='/#project' smooth>Portfolio</Link></li>
         <li><Link to='/#contact' smooth>Contact</Link></li>
