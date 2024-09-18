@@ -1,6 +1,7 @@
 import React from 'react';
 import profile from '../assets/images/profile.png';
 
+
 const About = () => {
     return (
         <div className='md:flex justify-center items-center sm:px-10 text-white' id='about'>

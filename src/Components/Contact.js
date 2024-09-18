@@ -47,7 +47,7 @@ const Contact = () => {
                     <h1 className="lg:text-5xl font-bold py-4 text-center">Contact Info</h1>
                     <p className="py-4 mt-8 flex justify-start items-center">
                         <HiLocationMarker className='text-2xl' />
-                        Rajshahi, Bangladesh
+                        Shanghai, China
                     </p>
                     <p className='pb-4 flex justify-start items-center'>
                         <HiPhoneMissedCall className='text-2xl' />
